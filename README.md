@@ -15,14 +15,20 @@ This website was built off a given code and I updated the html, css and javascri
 
 ## Usage
 
-Click generate passowrd button to begin
+Click generate password button to begin
 ![generatepassword](https://github.com/FROMERO63/randopassword/assets/134673364/bf67e917-09a4-4016-92cb-dd95055a7324)
+
+
 
 Added checkboxe feature to allow for multiple choices
 ![checkboxes](https://github.com/FROMERO63/randopassword/assets/134673364/4defb1cb-8369-4e30-95b0-4e174d9ac38f)
 
+
+
 Added a slider to confirm the length of the desired password
 ![length](https://github.com/FROMERO63/randopassword/assets/134673364/c2e2e4ab-26ca-4a12-b628-09d0f50aa27b)
+
+
 
 Added a final prompt to confirm selections or start over
 ![confirmations](https://github.com/FROMERO63/randopassword/assets/134673364/b5144db4-26bc-44a9-9a72-f77098902838)

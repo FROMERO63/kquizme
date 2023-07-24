@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+
+
+    <section ID = "customPrompt" class = "hidden">
+      <div id = "promptText">
+        Please choose character types from below. At least one
+      </div>
+      <div class="choice-container">
+        <label for="upperCase"> <input type= "checkbox" id = upperCase value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">Upper Case
+        </label>
+      </div>
+      <div class="choice-container">
+        <label for="lowerCase"> <input type= "checkbox" id = lowerCase value="abcdefghijklmnopqrstuvwxyz" name = sub>Lower Case
+        </label>
+      </div>
+      <div class="choice-container">
+        <label for="numbers"> <input type= "checkbox" id = numbers value="123456789" name = sub>Numbers
+        </label>
+      </div>  
+        <div class="choice-container">
+          <label for="specialSymbols"> <input type= "checkbox" id = specialSymbols value="!@#$%^&*()" name= sub>Special Symbols
+          </label>
+      </div>
+      <button id ="promptButton" class="promptButton">OK</button>
+        </section>
+
+
+    <section ID = "secondCustomPrompt" class = "hiddenTwo">
+      <div id = "promptText">
+        Please enter length of password. At least 8 and no more than 128
+      </div>
+      <div class="choice-container">
+        <input type =range min =8 max =128 id="promptInput" placeholder="8-128" step="1">
+        <p>Value: <output id= "theValue"></output></p>
+      </div>
+        <button id ="promptButtonTwo" class="promptButton">OK</button>
+      </section>
+
+
+    <section ID = "thirdCustomPrompt" class = "hiddenThree">
+      <div id = "promptText">
+        Please confirm selections below
+      </div>
+      <p id= "myConfirmations"></p>
+      <div class="choice-container">
+        <button id ="promptButtonThree" class="promptButton">Confirm</button>
+        <button id ="cancelButton" class="promptButton">Cancel</button>
+      </section>
+
+
+    <div class="wrapper" id="cardWrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
